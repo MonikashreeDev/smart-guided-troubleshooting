@@ -1,0 +1,13 @@
+test_abstention (test_engine.EngineTests) ... ok
+test_deeplink_exact_catalog (test_engine.EngineTests) ... ok
+test_determinism_core (test_engine.EngineTests) ... ok
+test_exact_cache (test_engine.EngineTests) ... ok
+test_health_and_missing_assets (test_engine.EngineTests) ... ok
+test_no_web_urls (test_engine.EngineTests) ... ok
+test_semantic_cache_guard (test_engine.EngineTests) ... ok
+test_supported_contract (test_engine.EngineTests) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.013s
+
+OK
