@@ -1,3 +1,10 @@
+test_ai_down_falls_back_to_rules (test_ai_layer.AILayerTests) ... ok
+test_ai_never_writes_steps (test_ai_layer.AILayerTests) ... ok
+test_low_confidence_ignored (test_ai_layer.AILayerTests) ... ok
+test_off_vocabulary_label_rejected (test_ai_layer.AILayerTests) ... ok
+test_out_of_scope_abstains (test_ai_layer.AILayerTests) ... ok
+test_rules_alone_cannot_parse_it (test_ai_layer.AILayerTests) ... ok
+test_tanglish_understood_then_validated (test_ai_layer.AILayerTests) ... ok
 test_abstention (test_engine.EngineTests) ... ok
 test_deeplink_exact_catalog (test_engine.EngineTests) ... ok
 test_determinism_core (test_engine.EngineTests) ... ok
@@ -8,6 +15,6 @@ test_semantic_cache_guard (test_engine.EngineTests) ... ok
 test_supported_contract (test_engine.EngineTests) ... ok
 
 ----------------------------------------------------------------------
-Ran 8 tests in 0.013s
+Ran 15 tests in 0.026s
 
 OK

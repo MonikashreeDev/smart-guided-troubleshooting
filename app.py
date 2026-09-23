@@ -41,5 +41,6 @@ class Handler(BaseHTTPRequestHandler):
 
 if __name__=='__main__':
     host=os.getenv('HOST','0.0.0.0'); port=int(os.getenv('PORT','8000'))
-    print(f'Smart Guided Troubleshooting Engine: http://{host}:{port}',flush=True)
+    print(f'Smart Guided Troubleshooting Engine: http://{host}:{port} (AI {"on" if ENGINE.ai.enabled else "off"})',flush=True)
+    import threading; threading.Thread(target=ENGINE._ensure_embeddings,daemon=True).start()  # warm catalog embeddings
     ThreadingHTTPServer((host,port),Handler).serve_forever()
